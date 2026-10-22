@@ -33,9 +33,11 @@ python predict.py
 
 **训练**读取 `data/train_data/manifest.csv`，最佳权重保存到 `models/best_model.pt`，损失曲线保存到 `logs/loss_curve_transformer.png`。
 
-当前直接运行训练代码默认使用示例数据,读取`data\train_data\proteins`和`data\train_data\demo_manifest.csv`中准备的示例数据，生成`demo_best_model.pt`和`"demo_logs`作为示例权重和示例数据。数据以及权重仅仅用于演示。
+当前直接运行训练代码默认使用示例数据,读取`data\train_data\proteins`和`data\train_data\demo_manifest.csv`中准备的示例数据，生成`demo_best_model.pt`和`"demo_logs`作为示例权重和示例数据。数据以及权重仅仅用于演示。如果需要训练完整模型，请下载完整的训练数据。训练的超参数在[`train.py`](train.py)中调整。模型本身的参数可以在[`src\affinity\models\affinity_model.py`](src/affinity/models/affinity_model.py)以及[`src\Ligand_transformer\model.py`](src/Ligand_transformer/model.py)中调整。
 
 **预测**读取 `data/predict_data/manifest_outputtest_wuxi.csv` 和权重，生成 `results/output_wuxi.csv`，`results/output_wuxi.csv`为预测的现货化合物库中共134,686个分子与CB2蛋白的亲和力。训练数据的原始预处理流程与输入来源见 [`data/train_data/data.md`](data/train_data/data.md)。
+
+在训练过程中**训练**、**验证**、**预测**数据统一通过[`data\train_data\manifest.csv`](data/train_data/manifest.csv)读取，每个蛋白对应一个配体。
 
 ## 项目文件
 

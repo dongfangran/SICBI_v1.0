@@ -1,0 +1,35 @@
+Configured training seed: 42
+SIAIS-Gnode022
+PyTorch: 2.1.2+cu118
+CUDA: 11.8
+GPU: NVIDIA GeForce RTX 4090
+Training started: 2026-10-02T09:51:53+0800
+Training seed: 42
+Epoch 002/100 | lr=2.00e-05 | train_loss=1.052673 | validation_loss=0.863462
+Epoch 003/100 | lr=3.00e-05 | train_loss=0.927508 | validation_loss=0.817031
+Epoch 004/100 | lr=4.00e-05 | train_loss=0.895864 | validation_loss=0.799917
+Epoch 005/100 | lr=5.00e-05 | train_loss=0.874804 | validation_loss=0.788112
+Epoch 006/100 | lr=6.00e-05 | train_loss=0.852250 | validation_loss=0.754020
+Epoch 007/100 | lr=7.00e-05 | train_loss=0.827656 | validation_loss=0.751783
+Epoch 008/100 | lr=8.00e-05 | train_loss=0.787626 | validation_loss=0.754587
+Epoch 009/100 | lr=9.00e-05 | train_loss=0.758848 | validation_loss=0.722890
+Epoch 010/100 | lr=1.00e-04 | train_loss=0.724172 | validation_loss=0.735554
+Epoch 011/100 | lr=1.00e-04 | train_loss=0.683926 | validation_loss=0.693479
+Epoch 012/100 | lr=9.99e-05 | train_loss=0.646081 | validation_loss=0.705559
+Epoch 013/100 | lr=9.97e-05 | train_loss=0.599795 | validation_loss=0.701709
+Epoch 014/100 | lr=9.95e-05 | train_loss=0.570323 | validation_loss=0.680511
+Epoch 015/100 | lr=9.92e-05 | train_loss=0.537134 | validation_loss=0.729738
+Epoch 016/100 | lr=9.89e-05 | train_loss=0.506741 | validation_loss=0.685436
+Epoch 017/100 | lr=9.85e-05 | train_loss=0.476788 | validation_loss=0.675315
+Epoch 018/100 | lr=9.81e-05 | train_loss=0.457498 | validation_loss=0.681126
+Epoch 019/100 | lr=9.76e-05 | train_loss=0.432759 | validation_loss=0.670749
+Epoch 020/100 | lr=9.70e-05 | train_loss=0.411897 | validation_loss=0.706584
+Epoch 021/100 | lr=9.64e-05 | train_loss=0.390055 | validation_loss=0.712120
+Epoch 022/100 | lr=9.57e-05 | train_loss=0.370084 | validation_loss=0.680977
+Epoch 023/100 | lr=9.50e-05 | train_loss=0.357318 | validation_loss=0.723480
+Epoch 024/100 | lr=9.42e-05 | train_loss=0.337310 | validation_loss=0.690968
+Epoch 025/100 | lr=9.34e-05 | train_loss=0.331271 | validation_loss=0.695235
+Early stopping: validation loss did not improve for 6 consecutive epochs. Keeping the best checkpoint with validation_loss=0.670749.
+Training finished: 2026-10-02T10:18:25+0800
+Training elapsed_seconds: 1592
+Training exit_status: 0

@@ -16,7 +16,7 @@
 
 ## 数据与预处理
 
-训练数据使用 MISATO 的蛋白–配体结构及分子动力学轨迹，按 PDB ID 匹配 LP-PDBBind 的实验亲和力记录，仅保留具有 Ki 或 Kd 标签的小分子配体复合物。预训练 dMaSIF 用于固定的蛋白表面特征提取，不使用本任务的测试集亲和力标签进行更新。轨迹筛选、口袋定义、构象聚类与合并，以及第三方数据来源，详见 [`data/train_data/data.md`](data/train_data/data.md)。使用第三方资源时仍应核对其原始发布页的许可条款。
+训练数据使用 MISATO 的蛋白–配体结构及分子动力学轨迹，按 PDB ID 匹配 LP-PDBBind 的实验亲和力记录，仅保留具有 Ki 或 Kd 标签的小分子配体复合物。预训练 dMaSIF 用于固定的蛋白表面特征提取，不使用本任务的测试集亲和力标签进行更新。轨迹筛选、口袋定义、构象聚类与合并，以及第三方数据来源，详见 [`data/train_data/data.md`](data/train_data/data.md)。使用第三方资源时仍应核对其原始发布页的许可条款。当前处理好的训练、验证、测试用的原始数据已上传至[https://doi.org/10.5281/zenodo.23129260](https://doi.org/10.5281/zenodo.23129260)。
 
 [`data/train_data/manifest.csv`](data/train_data/manifest.csv) 按复合物划分为训练集 6,825 条、验证集 853 条、测试集 853 条，约为 8:1:1。同一复合物的轨迹帧和构象状态保持在同一划分中；划分与去重原则见上述数据说明。`manifest.csv` 包含 `sample_id`、`protein_id`、`protein_path`、`ligand_id`、`ligand_smiles`、`state_prob_path`、`affinity` 和 `split`。NPY 路径相对于 manifest 所在目录解析。
 
